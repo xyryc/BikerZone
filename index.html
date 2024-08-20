@@ -43,7 +43,7 @@
   <body class="font-poppins">
     <!-- Header Section -->
     <header class="md:container md:mx-auto">
-      <nav>
+      <nav class="py-12">
         <div class="navbar bg-base-100">
           <div class="flex-1">
             <div class="dropdown">
@@ -90,10 +90,10 @@
       </nav>
 
       <!-- Caruousel -->
-      <div class="carousel w-full lg:h-[550px] bg-colorPrimaryBg">
+      <div class="carousel w-full lg:h-[550px] bg-colorPrimaryBg rounded-md">
         <!-- Slide 1 -->
         <div id="slide1" class="carousel-item relative w-full">
-          <div class="flex flex-col lg:flex-row p-12 lg:p-24">
+          <div class="flex flex-col lg:flex-row p-12 lg:p-[104px]">
             <!-- text content -->
             <div class="flex-1">
               <h2 class="text-6xl font-bold leading-[75px]">
@@ -121,7 +121,7 @@
 
         <!-- Slide 2 -->
         <div id="slide2" class="carousel-item relative w-full">
-          <div class="flex flex-col lg:flex-row p-12 lg:p-24">
+          <div class="flex flex-col lg:flex-row p-12 lg:p-[104px]">
             <!-- text content -->
             <div class="flex-1">
               <h2 class="text-6xl font-bold leading-[75px]">
@@ -178,7 +178,78 @@
     </header>
 
     <!-- Main Section -->
-    <main class="md:container md:mx-auto"></main>
+    <main class="md:container md:mx-auto">
+      <!-- Latest Bike Section -->
+      <section class="my-32">
+        <h3 class="text-5xl font-semibold text-center mb-12">Latest News</h3>
+
+        <!-- Cards -->
+        <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Card 1 -->
+          <div
+            class="card card-compact bg-base-100 shadow-xl border rounded-md"
+          >
+            <figure class="pt-5">
+              <img src="images/others/latest1.png" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title mt-6">Ducati XDIAVEL S-73</h2>
+              <p class="text-base font-normal leading-8 mt-[10px] mb-10">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                fermentum amet faucibus sed id nisi lectus at.
+              </p>
+              <div class="card-actions">
+                <button class="btn bg-colorPrimary text-white">
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="card card-compact bg-base-100 shadow-xl border rounded-md"
+          >
+            <figure class="pt-5">
+              <img src="images/others/latest2.png" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title mt-6">Ducati XDIAVEL S-73</h2>
+              <p class="text-base font-normal leading-8 mt-[10px] mb-10">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                fermentum amet faucibus sed id nisi lectus at.
+              </p>
+              <div class="card-actions">
+                <button class="btn btn-outline text-colorPrimary">
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="card card-compact bg-base-100 shadow-xl border rounded-md"
+          >
+            <figure class="pt-5">
+              <img src="images/others/latest3.png" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title mt-6">Ducati XDIAVEL S-73</h2>
+              <p class="text-base font-normal leading-8 mt-[10px] mb-10">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                fermentum amet faucibus sed id nisi lectus at.
+              </p>
+              <div class="card-actions">
+                <button class="btn btn-outline text-colorPrimary">
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- Footer Section -->
     <footer></footer>
