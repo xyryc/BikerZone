@@ -49,13 +49,26 @@
       .font-manrope {
         font-family: "Manrope", sans-serif;
       }
+
+      .bg-bike {
+        background-image: linear-gradient(
+            90deg,
+            rgb(24, 24, 24),
+            rgba(24, 24, 24, 0.82) 24.479%,
+            rgba(24, 24, 24, 0) 100%
+          ),
+          url(./images/others/bg-bike.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
     </style>
   </head>
   <body class="font-poppins">
     <!-- Header Section -->
-    <header class="md:container md:mx-auto">
-      <nav class="py-12">
-        <div class="navbar bg-base-100">
+    <header class="bg-bike min-h-screen">
+      <nav class="py-12 md:container md:mx-auto">
+        <div class="navbar text-white">
           <div class="flex-1">
             <div class="dropdown">
               <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -84,7 +97,7 @@
                 <li><a>Contact</a></li>
               </ul>
             </div>
-            <a href="./more.html" class="font-bold text-xl">BikerZone</a>
+            <a href="./index.html" class="font-bold text-xl">RiderZone</a>
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
@@ -95,94 +108,24 @@
             </ul>
           </div>
           <div class="">
-            <a class="btn bg-colorPrimary text-white">Login</a>
+            <a class="btn bg-colorPrimary text-white border-none">Login</a>
           </div>
         </div>
       </nav>
 
-      <!-- Caruousel -->
-      <div class="carousel w-full lg:h-[550px] bg-colorPrimaryBg rounded-md">
-        <!-- Slide 1 -->
-        <div id="slide1" class="carousel-item relative w-full">
-          <div class="flex flex-col lg:flex-row p-12 lg:p-[104px]">
-            <!-- text content -->
-            <div class="flex-1">
-              <h2 class="text-6xl font-bold leading-[75px]">
-                Ride-on R15 V4 with Smile
-              </h2>
-              <p class="mt-5 mb-[30px] text-base font-light leading-[26px]">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-              </p>
-              <button class="btn bg-colorPrimary text-white">Purchase</button>
-            </div>
-            <!-- image content -->
-            <div class="flex-1">
-              <img src="images/slider/bike1.png" class="w-[406px]" />
-            </div>
-          </div>
+      <div class="md:container md:mx-auto py-20 px-4 lg:px-0">
+        <div class="text-neutral-content">
+          <div class="lg:w-[45%]">
+            <h1 class="mb-8 text-[65px] font-bold">
+              Keep Your Ride Safe At Every Time
+            </h1>
+            <p class="mb-10">
+              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
+              et a id nisi.
+            </p>
 
-          <div
-            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
-          >
-            <a href="#slide3" class="btn btn-circle">❮</a>
-            <a href="#slide2" class="btn btn-circle">❯</a>
-          </div>
-        </div>
-
-        <!-- Slide 2 -->
-        <div id="slide2" class="carousel-item relative w-full">
-          <div class="flex flex-col lg:flex-row p-12 lg:p-[104px]">
-            <!-- text content -->
-            <div class="flex-1">
-              <h2 class="text-6xl font-bold leading-[75px]">
-                Ride-on R15 V4 with Smile
-              </h2>
-              <p class="mt-5 mb-[30px] text-base font-light leading-[26px]">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-              </p>
-              <button class="btn bg-colorPrimary text-white">Purchase</button>
-            </div>
-            <!-- image content -->
-            <div class="flex-1">
-              <img src="images/slider/bike2.png" class="w-[406px]" />
-            </div>
-          </div>
-
-          <div
-            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
-          >
-            <a href="#slide1" class="btn btn-circle">❮</a>
-            <a href="#slide3" class="btn btn-circle">❯</a>
-          </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div id="slide3" class="carousel-item relative w-full">
-          <div class="flex flex-col lg:flex-row p-12 lg:p-[104px]">
-            <!-- text content -->
-            <div class="flex-1">
-              <h2 class="text-6xl font-bold leading-[75px]">
-                Ride-on R15 V4 with Smile
-              </h2>
-              <p class="mt-5 mb-[30px] text-base font-light leading-[26px]">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-              </p>
-              <button class="btn bg-colorPrimary text-white">Purchase</button>
-            </div>
-            <!-- image content -->
-            <div class="flex-1">
-              <img src="images/slider/bike3.png" class="w-[406px]" />
-            </div>
-          </div>
-
-          <div
-            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
-          >
-            <a href="#slide2" class="btn btn-circle">❮</a>
-            <a href="#slide1" class="btn btn-circle">❯</a>
+            <a class="btn bg-colorPrimary text-white border-none">Purchase</a>
           </div>
         </div>
       </div>
@@ -190,8 +133,8 @@
 
     <!-- Main Section -->
     <main class="md:container md:mx-auto">
-       <!-- Featured Section -->
-       <section class="my-32">
+      <!-- Featured Section -->
+      <section class="my-32">
         <h3 class="text-5xl font-semibold text-center">
           Fetured Bikes In This Year
         </h3>
@@ -209,12 +152,8 @@
             src="images/others/feature-bike-2.png"
             alt=""
           />
-          <img class=" md:h-60" src="images/others/feature-bike.png" alt="" />
-          <img
-            class=" md:h-60"
-            src="images/others/feature-bike-2.png"
-            alt=""
-          />
+          <img class="md:h-60" src="images/others/feature-bike.png" alt="" />
+          <img class="md:h-60" src="images/others/feature-bike-2.png" alt="" />
         </div>
       </section>
 
